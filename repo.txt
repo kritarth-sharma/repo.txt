@@ -12,3 +12,4 @@ qwejbhujdbhdn
 yuus
 pass
 pleasepass
+pass.*
