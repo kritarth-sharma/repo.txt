@@ -10,9 +10,6 @@ pipeline {
       stage ('deploy') {
           steps {
             echo 'hey,hi,hello,bye'
-            sh '''#!/bin/bash
-                echo "who i'm $SHELL"
-            '''      
           }
       }
    }
