@@ -12,7 +12,7 @@ pipeline {
       }
       stage ('deploy') {
         when {
-             expression ( choice == '2' )
+             expression { choice == '2' }
         }
         steps {
                 echo 'hey,hi,hello,bye'
