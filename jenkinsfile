@@ -3,18 +3,24 @@ pipeline {
 
    stages {
       stage('BUILD') {
-         steps {
-            echo 'Hello World runnig build phase...'
-         }
+       when {
+              expression ( choice == '1' )
+            }
+            steps {
+                echo 'Hello World runnig build phase...'
+            }
       }
       stage ('deploy') {
-          steps {
-            echo 'hey,hi,hello,bye'
+       when {
+              expression ( choice == '2' )
+            }
+            steps {
+                echo 'hey,hi,hello,bye'
             sh '''#!/bin/bash
                 echo "hello from bash"
                 echo "who i'm $SHELL"
             '''      
-          }
+            }
       }
    }
 }
