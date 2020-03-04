@@ -81,12 +81,12 @@
         <repository>
           <id>deployment</id>
           <name>Internal Release</name>
-          <url></url>
+          <url>http://localhost:8081/repository/sample_rel/</url>
         </repository>
         <sanpshotRepository>
           <id>deployment</id>
           <name>Intetnal snapshot Releases</name>
-          <url></url>
+          <url>http://localhost:8081/repository/nexus/</url>
         </snapshotRepository>
    </distributionManagement>
   <dependencies>
