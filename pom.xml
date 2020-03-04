@@ -77,6 +77,25 @@
       </plugins>
     </pluginManagement>
   </build>
+   <distributionManagement>
+        <repository>
+          <id>deployment</id>
+          <name>Internal Release</name>
+          <url></url>
+        </repository>
+        <sanpshotRepository>
+          <id>deployment</id>
+          <name>Intetnal snapshot Releases</name>
+          <url></url>
+        </snapshotRepository>
+   </distributionManagement>
+  <dependencies>
+        <dependency>
+          <groupid>javax.servlet</groupid>
+          <artifactid>javax.servlet-api</artifactid>
+          <version>3.0.1</version>
+        </dependency>
+  </dependencies>  
 </project>
 
          
